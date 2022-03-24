@@ -54,5 +54,17 @@ export const FormLink = styled.p`
 
 export const Container = styled.div`
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+`;
+
+export const RadioTitle = styled.h2`
+    font-size: 1em;
+`;
+
+export const ContainerRadio = styled.div`
+    display: flex;
+    align-items: center;
     gap: 30px;
 `;

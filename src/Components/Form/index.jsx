@@ -9,7 +9,9 @@ import {
     Error,
     Button,
     FormLink, 
-    Container
+    Container,
+    RadioTitle,
+    ContainerRadio
 } from "./styles";
 
 import { Link } from "react-router-dom";
@@ -83,9 +85,12 @@ export default function Form({ inputs, form, link, button, radios }) {
             {
                 form.type === "SignUp" ?
                 <Container>
-                    {radios.map(radio => (
-                        <Radio {...radio} key={radio.id}/>
-                    ))}
+                    <RadioTitle>Escolha um framework</RadioTitle>
+                    <ContainerRadio>
+                        {radios.map(radio => (
+                            <Radio {...radio} key={radio.id}/>
+                        ))}
+                    </ContainerRadio>
                 </Container>
                 :
                 null
