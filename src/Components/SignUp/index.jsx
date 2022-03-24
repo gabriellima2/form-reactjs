@@ -1,52 +1,6 @@
 import Form from "../Form";
 
 export default function SignUp() {
-    const INPUT_ATTRIBUTES = [
-        {
-            type: "name",
-            name: "name",
-            id: "name",
-            label: "Nome"
-        },
-        {
-            type: "surname",
-            name: "surname",
-            id: "surname",
-            label: "Sobrenome"
-        },
-        {
-            type: "email",
-            name: "email",
-            id: "email",
-            label: "Email"
-        },
-        {
-            type: "password",
-            name: "password",
-            id: "password",
-            minLength: 8,
-            label: "Senha"
-        }
-    ];
-
-    const RADIO_ATTRIBUTES = [
-        {
-            id: "angular",
-            name: "framework",
-            label: "Angular"
-        },
-        {
-            id: "reactjs",
-            name: "framework",
-            label: "ReactJS",
-        },
-        {
-            id: "vuejs",
-            name: "framework",
-            label: "VueJS",
-        },
-    ];
-
     return (
         <Form 
             form={{
@@ -65,3 +19,49 @@ export default function SignUp() {
         />
     )
 }
+
+const INPUT_ATTRIBUTES = [
+    {
+        type: "name",
+        name: "name",
+        id: "name",
+        label: "Nome"
+    },
+    {
+        type: "surname",
+        name: "surname",
+        id: "surname",
+        label: "Sobrenome"
+    },
+    {
+        type: "email",
+        name: "email",
+        id: "email",
+        label: "Email"
+    },
+    {
+        type: "password",
+        name: "password",
+        id: "password",
+        minLength: 8,
+        label: "Senha"
+    }
+];
+
+const RADIO_ATTRIBUTES = [
+    {
+        id: "angular",
+        name: "framework",
+        label: "Angular"
+    },
+    {
+        id: "reactjs",
+        name: "framework",
+        label: "ReactJS",
+    },
+    {
+        id: "vuejs",
+        name: "framework",
+        label: "VueJS",
+    },
+];

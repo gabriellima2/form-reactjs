@@ -18,13 +18,19 @@ import { Link } from "react-router-dom";
 import Radio from "../Radio";
 
 export default function Form({ inputs, form, link, button, radios }) {
-    const { 
+    const {
+        insertKeysOnData,
+        insertNewType,
         insertMessage,
         data,
         message
     } = useContext(FormContext);
 
-    useEffect(() => insertMessage(null, null), []);
+    useEffect(() => {
+        insertMessage(null, null);
+        insertNewType(form.type);
+        insertKeysOnData(inputs);
+    }, []);
 
     const validateFieds = () => {
         const validateEmail = email => {
@@ -33,10 +39,6 @@ export default function Form({ inputs, form, link, button, radios }) {
         }
 
         const validatePassword = password => password.length > 8;
-
-        if (Object.keys(data).length - 1 !== inputs.length) {
-            return insertMessage("error", "Preencha todos os campos!");
-        }
 
         for (let key in data) {
             if (data[key] === "") {
