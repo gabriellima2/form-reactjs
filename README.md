@@ -1,13 +1,13 @@
 <h1>SignIn/SignUp</h1>
 
-Formulário de Login e Criar Conta feito com [ReactJS](https://pt-br.reactjs.org).
-Muitas aplicações fazem uso de formulários, principalmente para o usuário criar ou
-acessar sua conta.
+Formulários são features que faz parte do cotidiano de um Desenvolvedor, são muito importantes para a conexão do usuário com a aplicação seja
+com Login, envio de e-mails, pagamentos etc..
+Sabendo disso decidi criar esse projeto para praticar e ver seu funcionamento de perto.
 
 <h2>Objetivo:</h2>
 
-É um projeto simples mas, deu para colocar em prática e aprender coisas novas,
-pois não tinha feito um formulário, com ReactJS, de criação ou acesso de contas.
+Praticar e aprender novas tecnologias. Gostei de usar o Styled-Components para criação de estilos e
+aprendi a criar formulários com validações usando Hooks do ReactJS.
 
 
 <h2>Bibliotecas/Tecnologias utilizadas: </h2>
@@ -20,8 +20,6 @@ pois não tinha feito um formulário, com ReactJS, de criação ou acesso de con
 
 <h2>Imagens:</h2>
 <img src="./src/public/img/img1.png" >
-
-<h2></h2>
 
 <img src="./src/public/img/img2.png" >
 
@@ -49,3 +47,6 @@ $ npm run dev
 
 4. O servidor será aberto em http://localhost:3000
 ```
+
+<p align="center">Projeto feito com 💙 por <a href="https://www.linkedin.com/in/gabriel-lima-860612236">Gabriel Lima</a></p>
+
